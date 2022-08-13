@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/estilo-home.css">
+    <title>Quiz IEMA</title>
+</head>
+<body>
+    <header>
+        <div id="number-question" oninput="show_number_question()">
+
+        </div>
+    </header>
+    <main>
+        <section id="question" oninput="question()">
+
+        </section>
+
+        <section id="button">
+            <input type="button" value="Correto" onclick="correct()" id="success">
+            <input type="button" value="Errado" onclick="wrong()" id="error">
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

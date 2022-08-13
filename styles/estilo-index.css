@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #2A66DB;
+    color: white;
+}
+/*Título*/
+
+header, main {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    top: 40%;
+}
+
+main {
+    top: 50%;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+/*Botão*/
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: rgb(218, 129, 65);
+    border: 1px solid black;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+}
+
+input:hover {
+    background-color: #87cefa;
+    transition: .5s;
+    box-shadow: none;
+}
