@@ -10,17 +10,17 @@
 <body>
     <header>
         <div id="number-question" oninput="show_number_question()">
-
         </div>
     </header>
-    <main>
-        <section id="question" oninput="question()">
-
+    <main id="content">
+        <section id="question">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum tempora, soluta labore quam ipsa hic voluptates! Iure cum molestiae et necessitatibus praesentium veritatis illo repellat aut, aspernatur vel, dignissimos hic?</p>
         </section>
 
         <section id="button">
-            <input type="button" value="Correto" onclick="correct()" id="success">
             <input type="button" value="Errado" onclick="wrong()" id="error">
+            <input type="button" value="Correto" onclick="correct()" id="success">
+            <input type="button" value="Próxima" onclick="next()" id="next">
         </section>
     </main>
     <footer>
