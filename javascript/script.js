@@ -29,7 +29,13 @@ function next(){
     let new_id = get_question();
     let content_question = document.getElementById('container-question');
     if(new_id === total){
+        const errado = document.getElementById('error');
+        const certo = document.getElementById('success');
+        const proxima = document.getElementById('next');
         content_question.innerHTML = '<p id="congratulation">Fim da Apresentação<br>!!!Obrigado!!!</p>'
+        errado.style.display = 'none';
+        certo.style.display = 'none';
+        proxima.style.display = 'none';
     }else{
         resp.innerHTML = `<p>${new_id+1} / ${total}</p>`
         content_question.innerHTML = `<p id="question">${lista_perguntas[new_id]}</p>`
