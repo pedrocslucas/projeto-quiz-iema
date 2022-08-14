@@ -5,31 +5,34 @@ const container = document.getElementById('content');
 let resp = document.getElementById('number-question');
 let index_question = get_question();
 
-resp.innerHTML = `<p>${index_question} / ${total}</p>`
+resp.innerHTML = `<p>${index_question} / ${total}</p>`;
+
+function get_text_question(){
+    const question = String(document.getElementById('question').textContent);
+    return question;
+}
 
 function get_question(){
-    let atual_question;
-    let indice;
-    const question_show = document.getElementById('question').textContent;
+    let id_pergunta;
     for (let i = 0; i < lista_perguntas.length; i++) {
-        atual_question = lista_perguntas[i];
-        if(atual_question === question_show){
-            indice = lista_perguntas.indexOf(atual_question) + 1;
+        const pergunta = lista_perguntas[i];
+        if(pergunta === get_text_question()){
+            id_pergunta = Number(i + 1);
             break;
         }
     }
-    return indice;
+    return id_pergunta;
 }
 
 function next(){
     container.style.border = 'none';
-    let id_question = get_question();
-    let show_question = document.getElementById('container-question');
-    if(id_question != total) {
-        resp.innerHTML = `<p>${id_question} / ${total}</p>`
-        show_question.innerHTML = `${lista_perguntas[id_question]}`
-    }else {
-        show_question.innerHTML = '<p id="congratulations">Fim do Quiz, Obrigado!</p>';
+    let new_id = get_question();
+    let content_question = document.getElementById('container-question');
+    if(new_id === total){
+        content_question.innerHTML = '<p id="congratulation">Fim da Apresentação<br>!!!Obrigado!!!</p>'
+    }else{
+        resp.innerHTML = `<p>${new_id+1} / ${total}</p>`
+        content_question.innerHTML = `<p id="question">${lista_perguntas[new_id]}</p>`
     }
 }
 

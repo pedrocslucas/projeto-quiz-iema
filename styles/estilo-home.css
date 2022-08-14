@@ -43,6 +43,12 @@ section#container-question {
     padding: 10px;
 }
 
+#congratulation {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 section#button {
     margin-top: 20px;
     display: flex;
