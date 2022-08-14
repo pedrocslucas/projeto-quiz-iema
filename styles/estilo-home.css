@@ -21,7 +21,7 @@ header p {
     text-align: center;
     background-color: white;
     width: 10%;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     color: black;
     padding: 5px;
@@ -36,13 +36,15 @@ main {
     background-color: #f3f3f3;
     margin: auto;
 }
-section#question {
+section#container-question {
+    height: 150px;
     text-align: justify;
     color: black;
     padding: 10px;
 }
 
 section#button {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
