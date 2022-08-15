@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
@@ -30,7 +32,7 @@ h1 {
     font-size: 3.5em;
 }
 
-main {
+body > main {
     margin-top: 5vh;
 }
 
@@ -54,6 +56,7 @@ main {
 }
 
 /*Quiz*/
+
 /*Header*/
 #quiz header{
     max-width: 400px;
@@ -75,20 +78,26 @@ main {
 
 /*Main*/
 
-#quiz main {
+#content {
+    font-family: 'Kanit', sans-serif;
     border-radius: 5px;
     padding: 10px;
     max-width: 400px;
     background-color: #f3f3f3;
     margin: auto;
+    border: 3px solid rgb(40, 80, 200);
 }
 
 #quiz section#container-question {
-    height: 150px;
     font-size: 1.2em;
     text-align: center;
     color: black;
-    padding: 10px;
+    height: 100px;
+}
+
+#img-logo {
+    text-align: center;
+    height: 50px;
 }
 
 #congratulation {
@@ -98,7 +107,7 @@ main {
 }
 
 #quiz section#button {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -138,7 +147,7 @@ main {
     background-color: rgb(230, 80, 20);
 }
 
-#quiz > main input {
+#quiz > #content input {
     width: 80px;
     padding: 5px;
 }
