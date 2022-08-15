@@ -1,4 +1,4 @@
-const lista_perguntas = ["Pergunta 1", "Pergunta 2", "Pergunta 3", "Pergunta 4", "Pergunta 5", "Pergunta 6", "Pergunta 7"];
+const lista_perguntas = ["Quantas vezes devo amamentar?", "Como o bebê deve pegar na mama? (formato da boca)", "Qual a importância da amamentação?", "Quando o leite materno deve ser introduzido?", "Quais os benefícios do leite materno para o desenvolvimento da criança?", "O aleitamento materno exclusivo trás vantagens para as mães!. Cite algumas dessas vantagens.", "Que hormônio é produzido durante a amamentação?", "Qual o tempo mínimo para amamentar?", "Até quando a mãe deve amamentar a criança?", "Devo dar água ao recém nascido,  durante os primeiros 6 meses de amamentação?", "Que tipos de cânceres são previnidos por mulheres que amamentam? Cite 3", "A amamentação exclusiva pode ajudar a espaçar as gestações? Por quê?", "Existe diferença entre o leite inicial  e final da mamada? Se sim explique.", "Como fazer o bebê ganhar peso?"];
 const total = Number(lista_perguntas.length);
 const container = document.getElementById('content');
 

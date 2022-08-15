@@ -18,21 +18,21 @@ header, main {
     text-align: center;
     position: absolute;
     margin: auto;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
 }
 
 header {
-    top: 40%;
-}
-
-main {
-    top: 50%;
+    top: 10vh;
 }
 
 h1 {
     font-size: 3.5em;
+}
+
+main {
+    top: 60vh;
 }
 
 /*Botão*/
