@@ -16,10 +16,31 @@
         </picture>
         <h1>Quiz do iema</h1>
     </header>
-    <main>
-        <a href="home.html">
-            <input type="button" value="COMEÇAR">
-        </a>
+    <main id="start">
+        <input type="button" value="COMEÇAR" onclick="comecar()">
     </main>
+    <div id="quiz">
+        <header>
+            <div id="number-question">
+            </div>
+            <div id="tema">
+                <p>Tema: Amamentação</p>
+            </div>
+        </header>
+        <main id="content">
+            <section id="container-question">
+                <p id="question">Quantas vezes devo amamentar?</p>
+            </section>
+    
+            <section id="button">
+                <input type="button" value="Errado" onclick="wrong()" id="error">
+                <input type="button" value="Correto" onclick="correct()" id="success">
+                <input type="button" value="Próxima" onclick="next()" id="next">
+            </section>
+        </main>
+    </div>
+    <footer>
+    </footer>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

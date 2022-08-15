@@ -13,19 +13,21 @@ body {
 
 /*Header*/
 header{
+    max-width: 400px;
     padding: 8px;
-    margin: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
 }
 
-header p {
+#number-question p, #tema p {
     text-align: center;
     background-color: white;
-    width: 10%;
     font-size: 1em;
     font-weight: bold;
     color: black;
     padding: 5px;
-    border-radius: 5px;
 }
 
 /*Main*/

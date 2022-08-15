@@ -35,7 +35,7 @@ main {
 }
 
 /*Botão*/
-input {
+#start input {
     font-family: 'Maven Pro', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
@@ -47,8 +47,102 @@ input {
     border-radius: 7px;
 }
 
-input:hover {
+#start input:hover {
     background-color: rgb(195, 115, 45);
     transition: .5s;
     box-shadow: none;
+}
+
+/*Quiz*/
+/*Header*/
+#quiz header{
+    max-width: 400px;
+    padding: 8px;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#number-question p, #tema p {
+    text-align: center;
+    background-color: white;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+}
+
+/*Main*/
+
+#quiz main {
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 400px;
+    background-color: #f3f3f3;
+    margin: auto;
+}
+
+#quiz section#container-question {
+    height: 150px;
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+#congratulation {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#quiz section#button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#error, #success, #next {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    color: white;
+}
+
+#error {
+    background-color: rgb(230, 60, 60);
+}
+
+#success {
+    background-color: rgb(60, 160, 60);
+}
+
+#next {
+    background-color: rgb(230, 100, 60);
+}
+
+#error:hover {
+    box-shadow: none;
+    background-color: rgb(200, 20, 20);
+}
+
+#success:hover {
+    box-shadow: none;
+    background-color: rgb(30, 130, 30);
+}
+
+#next:hover {
+    box-shadow: none;
+    background-color: rgb(230, 80, 20);
+}
+
+#quiz > main input {
+    width: 80px;
+    padding: 5px;
+}
+
+#quiz {
+    display: none;
 }

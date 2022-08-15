@@ -7,6 +7,14 @@ let index_question = get_question();
 
 resp.innerHTML = `<p>${index_question} / ${total}</p>`;
 
+const content_start = document.getElementById('start');
+const content_quiz = document.getElementById('quiz')
+
+function comecar(){
+    content_start.style.display = 'none';
+    content_quiz.style.display = 'inline';
+}
+
 function get_text_question(){
     const question = String(document.getElementById('question').textContent);
     return question;
