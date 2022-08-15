@@ -62,7 +62,7 @@ function next(){
 
 function correct(){
     img_logo.style.display = 'inline';
-    img_logo.setAttribute('src', '../images/right.svg');
+    img_logo.setAttribute('src', '../images/right.png');
     img_content.appendChild(img_logo);
     container.style.border = '3px solid rgb(60, 160, 60)';
     next_question = true;
@@ -70,7 +70,7 @@ function correct(){
 
 function wrong(){
     img_logo.style.display = 'inline';
-    img_logo.setAttribute('src', '../images/wrong.svg');
+    img_logo.setAttribute('src', '../images/wrong.png');
     img_content.appendChild(img_logo);
     container.style.border = 'inset';
     container.style.border = '3px solid rgb(230, 60, 60)';
