@@ -4,9 +4,8 @@ const container = document.getElementById('content');
 
 let next_question = false;
 
-let img_content = document.getElementById('img-logo');
-let img_logo = document.createElement('img');
-img_logo.setAttribute('id', 'icon');
+let img_logo = document.getElementById('icon');
+img_logo.style.display = 'none';
 
 let resp = document.getElementById('number-question');
 let index_question = get_question();
@@ -63,7 +62,6 @@ function next(){
 function correct(){
     img_logo.style.display = 'inline';
     img_logo.setAttribute('src', '../images/right.png');
-    img_content.appendChild(img_logo);
     container.style.border = '3px solid rgb(60, 160, 60)';
     next_question = true;
 }
@@ -71,7 +69,6 @@ function correct(){
 function wrong(){
     img_logo.style.display = 'inline';
     img_logo.setAttribute('src', '../images/wrong.png');
-    img_content.appendChild(img_logo);
     container.style.border = 'inset';
     container.style.border = '3px solid rgb(230, 60, 60)';
     next_question = true;
