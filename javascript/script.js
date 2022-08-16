@@ -4,8 +4,10 @@ const container = document.getElementById('content');
 
 let next_question = false;
 
-let img_logo = document.getElementById('icon');
-img_logo.style.display = 'none';
+let img_logo_right = document.getElementById('icon-right');
+let img_logo_wrong = document.getElementById('icon-wrong');
+img_logo_right.style.display = 'none';
+img_logo_wrong.style.display = 'none';
 
 let resp = document.getElementById('number-question');
 let index_question = get_question();
@@ -38,7 +40,8 @@ function get_question(){
 }
 
 function next(){
-    img_logo.style.display = 'none';
+    img_logo_right.style.display = 'none';
+    img_logo_wrong.style.display = 'none';
     if(next_question){
         container.style.border = '3px solid rgb(40, 80, 200)';
         let new_id = get_question();
@@ -60,15 +63,13 @@ function next(){
 }
 
 function correct(){
-    img_logo.style.display = 'inline';
-    img_logo.setAttribute('src', '../images/right.png');
+    img_logo_right.style.display = 'inline';
     container.style.border = '3px solid rgb(60, 160, 60)';
     next_question = true;
 }
 
 function wrong(){
-    img_logo.style.display = 'inline';
-    img_logo.setAttribute('src', '../images/wrong.png');
+    img_logo_wrong.style.display = 'inline';
     container.style.border = 'inset';
     container.style.border = '3px solid rgb(230, 60, 60)';
     next_question = true;
