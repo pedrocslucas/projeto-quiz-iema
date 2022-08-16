@@ -64,12 +64,14 @@ function next(){
 
 function correct(){
     img_logo_right.style.display = 'inline';
+    img_logo_wrong.style.display = 'none';
     container.style.border = '3px solid rgb(60, 160, 60)';
     next_question = true;
 }
 
 function wrong(){
     img_logo_wrong.style.display = 'inline';
+    img_logo_right.style.display = 'none';
     container.style.border = 'inset';
     container.style.border = '3px solid rgb(230, 60, 60)';
     next_question = true;
